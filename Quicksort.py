@@ -1,10 +1,10 @@
 def quicksort(arreglo, low, high):
     if low < high:
-        pi = partition(arreglo, low, high)
+        pi = partir(arreglo, low, high)
         quicksort(arreglo, low, pi - 1)
         quicksort(arreglo, pi + 1, high)
 
-def partition(arreglo, low, high):
+def partir(arreglo, low, high):
     pivot = arreglo[high]
     i = low - 1
     for j in range(low, high):
